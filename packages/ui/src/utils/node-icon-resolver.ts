@@ -9,6 +9,7 @@ import choice from '../assets/eip/choice.png';
 import circuit_breaker from '../assets/eip/circuitBreaker.png';
 import claim_check from '../assets/eip/claimCheck.png';
 import convert_body from '../assets/eip/convertBody.png';
+import datamapper from '../assets/eip/datamapper.svg';
 import delay from '../assets/eip/delay.png';
 import dynamic_router from '../assets/eip/dynamic-router.png';
 import enrich from '../assets/eip/enrich.png';
@@ -57,6 +58,7 @@ import wiretap from '../assets/eip/wiretap.png';
 // component icons
 import activemq from '../assets/components/amq.svg';
 import amqp from '../assets/components/amqp.svg';
+import atlasmap from '../assets/components/atlasmap.svg';
 import aws from '../assets/components/aws.png';
 import aws2_ddb from '../assets/components/aws-ddb.svg';
 import aws2_s3 from '../assets/components/aws-s3.svg';
@@ -182,6 +184,8 @@ export class NodeIconResolver {
         return activemq;
       case 'amqp':
         return amqp;
+      case 'atlasmap':
+        return atlasmap;
       case 'arangodb':
       case 'as2':
       case 'asterisk':
@@ -655,6 +659,8 @@ export class NodeIconResolver {
       case 'idempotentConsumer':
         return idempotent_consumer;
       // case 'kamelet': handled on top
+      case 'kaoto-datamapper':
+        return datamapper;
       case 'loadBalance':
         return load_balance;
       case 'log':
