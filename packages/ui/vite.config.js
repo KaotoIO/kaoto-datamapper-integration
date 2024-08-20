@@ -1,6 +1,6 @@
 // @ts-check
 import react from '@vitejs/plugin-react';
-import { dirname, relative, resolve } from 'node:path';
+import { dirname, relative } from 'node:path';
 import { defineConfig } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import packageJson from './package.json';
@@ -25,7 +25,7 @@ export default defineConfig(async () => {
           return {
             src: file,
             dest,
-            transform: (content, filename) => {
+            transform: (content) => {
               return JSON.stringify(JSON.parse(content));
             },
           };
@@ -39,7 +39,7 @@ export default defineConfig(async () => {
     },
     build: {
       outDir,
-      sourcemap: true,
+      sourcemap: false,
       emptyOutDir: true,
     },
     base: './',

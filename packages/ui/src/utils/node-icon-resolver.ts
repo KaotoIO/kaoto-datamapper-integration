@@ -9,7 +9,6 @@ import choice from '../assets/eip/choice.png';
 import circuit_breaker from '../assets/eip/circuitBreaker.png';
 import claim_check from '../assets/eip/claimCheck.png';
 import convert_body from '../assets/eip/convertBody.png';
-import datamapper from '../assets/eip/datamapper.svg';
 import delay from '../assets/eip/delay.png';
 import dynamic_router from '../assets/eip/dynamic-router.png';
 import enrich from '../assets/eip/enrich.png';
@@ -660,7 +659,7 @@ export class NodeIconResolver {
         return idempotent_consumer;
       // case 'kamelet': handled on top
       case 'kaoto-datamapper':
-        return datamapper;
+        return atlasmap;
       case 'loadBalance':
         return load_balance;
       case 'log':
