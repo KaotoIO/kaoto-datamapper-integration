@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+
+    /* Typings */
+    "types": [
+      "@testing-library/jest-dom",
+      "@types/jest",
+      "@types/node",
+    ],
+  },
+  "exclude": ["node_modules"]
+}
