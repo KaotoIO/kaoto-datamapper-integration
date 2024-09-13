@@ -36,6 +36,7 @@ import { CanvasDefaults } from './canvas.defaults';
 import { CanvasEdge, CanvasNode, LayoutType } from './canvas.models';
 import { ControllerService } from './controller.service';
 import { FlowService } from './flow.service';
+import './Canvas.scss';
 
 interface CanvasProps {
   contextToolbar?: ReactNode;
@@ -211,6 +212,7 @@ export const Canvas: FunctionComponent<PropsWithChildren<CanvasProps>> = ({ enti
   return (
     <TopologyView
       defaultSideBarSize={sidebarWidth + 'px'}
+      minSideBarSize={'210px'}
       onSideBarResize={(width) => {
         setSidebarWidth(width);
       }}
